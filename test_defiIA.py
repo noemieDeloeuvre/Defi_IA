@@ -23,7 +23,7 @@ import pandas as pd
 
 
 import os
-liste_image=os.listdir("//Users//sofian//Documents//data_airbus_defi//train//other//")
+liste_image=os.listdir("//Users//sofian//Documents//Defi_IA//data_airbus_defi//train//other//")
 
 import matplotlib.image as mpimg
 import numpy as np
@@ -31,13 +31,13 @@ import numpy as np
 tab_image = pd.DataFrame(columns =['nom_img', 'eolien'])
 
 for image in liste_image:
-    img = mpimg.imread('/Users/sofian/Documents/data_airbus_defi/train/other/'+image)
-    tab_image.loc[len(tab_image)] = [image, 0]
+    img = mpimg.imread('/Users/sofian/Documents/Defi_IA/data_airbus_defi/train/other/'+image)
+    tab_image.loc[len(tab_image)] = [img, 0]
 
-liste_image2=os.listdir("//Users//sofian//Documents//data_airbus_defi//train//target//")
+liste_image2=os.listdir("//Users//sofian//Documents//Defi_IA//data_airbus_defi//train//target//")
 
 for image2 in liste_image2:
-    img = mpimg.imread('/Users/sofian/Documents/data_airbus_defi/train/target/'+image2)
-    tab_image.loc[len(tab_image)] = [image2, 1]
+    img = mpimg.imread('/Users/sofian/Documents/Defi_IA/data_airbus_defi/train/target/'+image2)
+    tab_image.loc[len(tab_image)] = [img, 1]
 
 
